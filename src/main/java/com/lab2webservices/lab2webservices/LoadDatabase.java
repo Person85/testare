@@ -9,8 +9,8 @@ class LoadDatabase {
     @Bean
     CommandLineRunner initDatabase(PhoneRepository phoneRepo, BrandRepository brandRepo) {
         return args -> {
-            phoneRepo.save(new Phone("Iphone X", 1));
-            phoneRepo.save(new Phone("Samsung Galaxy S10", 2));
+            phoneRepo.save(new Phone(1, "Iphone"));
+            phoneRepo.save(new Phone(2, "Samsung"));
             brandRepo.save(new Brand("Apple"));
             brandRepo.save(new Brand("Samsung"));
         };

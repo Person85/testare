@@ -16,7 +16,7 @@ public class Phone {
     private String phoneName;
     private int brandId;
 
-    public Phone(String phoneName, int brandId){
+    public Phone(int brandId, String phoneName){
         this.phoneName = phoneName;
         this.brandId = brandId;
     }
